@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        /* background-image: url(../../Img&video/banner-car.png); */
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blueviolet;
+        padding: 20px 20px;
+        
+        
+       
+      }
+      .navbar .logo {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        animation-name: anima;
+        animation-duration: 1s;
+      }
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        animation-name: anima1;
+        animation-duration: 1s;
+      
+      }
+      .navbar ul li {
+        margin-left: 20px;
+        
+      }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+      }
+      .navbar ul li a:hover {
+        background-color: aqua;
+      }
+      @keyframes anima {
+        from{
+          transform: translatex(-100%);
+          opacity: 0;
+        }
+        
+      }
+      @keyframes anima1 {
+        from{
+          transform: translatex(100%);
+          opacity: 0;
+        }
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">MyLogo</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
